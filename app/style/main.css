@@ -1,0 +1,40 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: "Helvetica-Nue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  color: #333;
+  -webkit-font-smoothing: antialiased; }
+
+form {
+  margin: 50px;
+  font-size: 1.2em; }
+  form input {
+    padding: 3px 7px;
+    font-size: 1.01em; }
+
+#newList, .panel {
+  font-size: 1.3em; }
+
+.new-item-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .new-item-header button {
+    margin-right: 10px; }
+
+.panel-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  margin-top: 50px; }

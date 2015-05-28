@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+        title
+        link(href="app/style/main.css" rel="stylesheet")
+    body
+        form#newTaskForm
+            label New Item
+            input(id='newItemInput' placeholder="new task")
+            button#saveNewItem Save
+            button#cancel Cancel
+
+        .new-item-header
+            button(id = 'newListItem' href='#' class='pull-right pencil' style='') New
+            #newList New List
+        .panel-wrapper
+            .panel In Progress
+                ul.list-group#currentList
+
+            .panel Archived
+                ul.list-group#archivedList
+
+
+
+
+
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+    script(src="app/scripts/app.js")
