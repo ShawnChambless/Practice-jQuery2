@@ -2,20 +2,20 @@
 <html>
   <head>
     <title></title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <link href="app/style/main.css" rel="stylesheet">
   </head>
   <body>
     <form id="newTaskForm">
       <label>New Item</label>
       <input id="newItemInput" placeholder="new task">
-      <button id="saveNewItem">Save</button>
-      <button id="cancel">Cancel</button>
+      <button id="saveNewItem" class="btn btn-md btn-primary">Save</button>
+      <button id="cancel" class="btn btn-md btn-danger">Cancel</button>
     </form>
-    <div class="new-item-header">
-      <button id="newListItem" href="#" style="" class="pull-right pencil">New</button>
-      <div id="newList">New List</div>
-    </div>
     <div class="panel-wrapper">
+      <div class="panel">Awaiting Action
+        <ul id="awaiting" class="list-group"></ul>
+      </div>
       <div class="panel">In Progress
         <ul id="currentList" class="list-group"></ul>
       </div>
@@ -25,5 +25,6 @@
     </div>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <script src="app/scripts/app.js"></script>
 </html>
